@@ -15,6 +15,10 @@ public class TestGraph {
         socialNetwork.addEdge("Bruno", "Tammy");
         socialNetwork.addEdge("Silvia", "Bruno");
         socialNetwork.addEdge("Bruno", "Billie");
+        socialNetwork.addEdge("Tammy", "Bruno");
+
+        System.out.println(socialNetwork.containsEdge("Billie", "Tammy"));
+        System.out.println(socialNetwork.containsEdge("Tammy", "Billie"));
 
         System.out.println(socialNetwork);
     }
